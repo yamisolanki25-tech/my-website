@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(220, 217, 246);
+    color: #1a0651;
+
+}
+
+header {
+    background-color: rgb(252, 216, 168);
+    padding: 20px;
+    text-align: center;
+
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0 5px;
+    border-radius: 25px;
+    background-color: bisque;
+    color: #141013;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d5b4fc;
+    color: white;
+}
+
+nav a.active {
+    background-color: #682288;
+    color: white;
+}
+
+nav a.active:hover {
+    color: burlywood;
+    background-color: aliceblue;
+}
+
+
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.products,
+.Combo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+footer {
+    background-color: #c8ebe3;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
